@@ -59,7 +59,7 @@ const FadeIn = ({ children, delay = 0, y = 20 }) => {
 function App() {
   const [showBanner, setShowBanner] = useState(true);
 
-  const phoneNumber = '+596696000000'; // Placeholder, user will replace
+  const phoneNumber = '+596696675430'; // Client's actual number
   const whatsappMsg = encodeURIComponent('Bonjour, je souhaite un devis pour un service.');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMsg}`;
 
@@ -150,12 +150,12 @@ function App() {
           <div className="services-grid">
             <FadeIn delay={0.1}>
               <div className="service-card">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Logistique" className="service-image" />
+                <img src="https://images.pexels.com/photos/275037/pexels-photo-275037.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" alt="Logistique" className="service-image" />
                 <div className="service-content">
                   <div className="service-icon"><Truck size={24} /></div>
                   <h3>Logistique</h3>
                   <ul className="service-list">
-                    <li><ArrowRight size={16} /> Chargement/déchargement</li>
+                    <li><ArrowRight size={16} /> Dépotage de conteneurs</li>
                     <li><ArrowRight size={16} /> Manutention</li>
                     <li><ArrowRight size={16} /> Opérateur chariot</li>
                   </ul>
@@ -287,12 +287,12 @@ function App() {
 
             <FadeIn delay={0.5}>
               <div className="service-card">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Clôture" className="service-image" />
+                <img src="https://images.pexels.com/photos/255269/pexels-photo-255269.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" alt="Clôture" className="service-image" />
                 <div className="service-content">
                   <div className="service-icon"><Fence size={24} /></div>
                   <h3>Aménagement</h3>
                   <ul className="service-list">
-                    <li><ArrowRight size={16} /> Pose de clôtures</li>
+                    <li><ArrowRight size={16} /> Pose de grillage et clôtures</li>
                   </ul>
                 </div>
               </div>
@@ -314,13 +314,13 @@ function App() {
 
             <FadeIn delay={0.7}>
               <div className="service-card">
-                <img src="https://images.unsplash.com/photo-1605600659908-0ef719419d41?auto=format&fit=crop&w=600&q=80" alt="Débarras" className="service-image" />
+                <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600&q=80" alt="Débarras" className="service-image" />
                 <div className="service-content">
                   <div className="service-icon"><Box size={24} /></div>
-                  <h3>Débarras</h3>
+                  <h3>Débarras d'encombrants</h3>
                   <ul className="service-list">
-                    <li><ArrowRight size={16} /> Enlèvement d'encombrants</li>
-                    <li><ArrowRight size={16} /> Évacuation de déchets verts</li>
+                    <li><ArrowRight size={16} /> Électroménager, frigo...</li>
+                    <li><ArrowRight size={16} /> Ferraille, tôle, bois</li>
                   </ul>
                 </div>
               </div>
