@@ -67,7 +67,7 @@ function App() {
     (async function () {
       const cal = await getCalApi();
       cal('ui', {
-        styles: { branding: { brandColor: '#FFC700' } },
+        styles: { branding: { brandColor: '#0A5CFF' } }, // Ancien: '#FFC700'
         hideEventTypeDetails: false,
         layout: 'month_view'
       });

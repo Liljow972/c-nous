@@ -1,8 +1,21 @@
 :root {
   --primary-black: #0F0F0F;
-  --primary-yellow: #FFC700;
   --light-grey: #F3F3F3;
   --white: #FFFFFF;
+  
+  /* 🟡 ANCIEN THEME JAUNE (A remettre si le client change d'avis) */
+  /*
+  --primary-yellow: #FFC700;
+  --primary-yellow-hover: #e6b300;
+  --primary-yellow-rgb: 255, 199, 0;
+  --btn-text-color: var(--primary-black);
+  */
+  
+  /* 🔵 NOUVEAU THEME BLEU TENTATIVE */
+  --primary-yellow: #0A5CFF; /* Je garde le nom de variable "yellow" pour pas tout casser */
+  --primary-yellow-hover: #004bb5;
+  --primary-yellow-rgb: 10, 92, 255;
+  --btn-text-color: var(--white);
   
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -101,14 +114,14 @@ section {
 
 .btn-primary {
   background-color: var(--primary-yellow);
-  color: var(--primary-black);
-  box-shadow: 0 4px 6px rgba(255, 199, 0, 0.3);
+  color: var(--btn-text-color);
+  box-shadow: 0 4px 6px rgba(var(--primary-yellow-rgb), 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #e6b300;
+  background-color: var(--primary-yellow-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(255, 199, 0, 0.4);
+  box-shadow: 0 6px 12px rgba(var(--primary-yellow-rgb), 0.4);
 }
 
 .btn-secondary {
@@ -167,7 +180,7 @@ section {
 
 .btn-sm {
   background-color: var(--primary-yellow);
-  color: var(--primary-black);
+  color: var(--btn-text-color);
   padding: 0.4rem 0.8rem;
   font-size: 0.85rem;
   font-weight: 600;
@@ -379,7 +392,7 @@ section {
 .service-icon {
   width: 50px;
   height: 50px;
-  background-color: rgba(255, 199, 0, 0.1);
+  background-color: rgba(var(--primary-yellow-rgb), 0.1);
   color: var(--primary-yellow);
   border-radius: 12px;
   display: flex;
@@ -460,7 +473,7 @@ section {
   width: 40px;
   height: 40px;
   background-color: var(--primary-yellow);
-  color: var(--primary-black);
+  color: var(--btn-text-color);
   font-size: 1.25rem;
   font-family: var(--font-heading);
   font-weight: 800;
@@ -468,7 +481,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(255, 199, 0, 0.3);
+  box-shadow: 0 0 20px rgba(var(--primary-yellow-rgb), 0.3);
 }
 
 .process-step h3 {
